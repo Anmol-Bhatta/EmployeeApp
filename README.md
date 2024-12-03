@@ -2,7 +2,7 @@ To run, pull the repo, load the project with Android Studio (latest version), 	a
 
 Implementation notes: 
  
-Passwords for user credentials are hashed using Bcrypt before being stored in the database. Classes are mostly implemented as described in the assignment instructions. Reasonable validations for each field are handled in the backend (regex used for proper password usage during registration, must be of certain length, etc. States must be proper state codes, and so on). 
+Passwords for user credentials are hashed using Bcrypt before being stored in the database. Reasonable validations for each field are handled in the backend (regex used for proper password usage during registration, must be of certain length, etc. States must be proper state codes, and so on). 
 
 Database functionality can be tested using CURL commands (or Postman if you prefer, but CURL is going to be built-in to your system). You must send a json payload to the remote server (in the code, this is shown as http://10.0.2.2:8080). 10.0.2.2 is the loopback for localhost. So long as the payload is formatted as the code expects, it should return a message indicating success or failure depending on if validation conditions are met. Examples: 
 
